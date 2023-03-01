@@ -1,0 +1,145 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --dark-blue: hsl(234, 12%, 34%);
+    --gray-blue: hsl(229, 6%, 66%);
+    --light-gray: hsl(0, 0%, 98%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   background-color: var(--light-gray);
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 2rem;
+    color: var(--dark-blue);
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--dark-blue);
+}
+
+p {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--gray-blue);
+}
+
+.global-container {
+    height: 100vh;
+}
+
+.site-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container {
+    width: 25rem;
+}
+
+.middle-container {
+    width: 25rem;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.right-container {
+    width: 25rem;
+}
+
+.text {
+    align-self: flex-start;
+    margin: 30px;
+}
+
+.icon {
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   padding: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: white;
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.supervisor {
+    border-top: 5px solid var(--cyan);
+}
+
+.team {
+    border-top: 5px solid var(--red);
+}
+
+.karma {
+    border-top: 5px solid var(--orange);
+}
+
+.calculator {
+    border-top: 5px solid var(--blue);
+}
+
+@media (max-width: 1200px) {
+    header {
+        width: 25rem;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
